@@ -1,7 +1,7 @@
 package soap.service.repository;
 
+import exhibition.soapservice.Exhibition;
 import org.springframework.stereotype.Component;
-import soap.service.entity.Exhibition;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
@@ -13,14 +13,24 @@ public class ExhibitionRepository {
 
     @PostConstruct
     public void initData() {
-        Exhibition exhibition1 = new Exhibition(1L, "Games");
-        Exhibition exhibition2 = new Exhibition(2L, "Furs");
-        Exhibition exhibition3 = new Exhibition(3L, "Marvel");
-        Exhibition exhibition4 = new Exhibition(4L, "Channel");
-
+        Exhibition exhibition1 = new Exhibition();
+        exhibition1.setId(1L);
+        exhibition1.setTitle("Games");
         mapEntities.put(exhibition1.getId(), exhibition1);
+
+        Exhibition exhibition2 = new Exhibition();
+        exhibition1.setId(2L);
+        exhibition1.setTitle("Furs");
         mapEntities.put(exhibition2.getId(), exhibition2);
+
+        Exhibition exhibition3 = new Exhibition();
+        exhibition1.setId(3L);
+        exhibition1.setTitle("Marvel");
         mapEntities.put(exhibition3.getId(), exhibition3);
+
+        Exhibition exhibition4 = new Exhibition();
+        exhibition1.setId(4L);
+        exhibition1.setTitle("Channel");
         mapEntities.put(exhibition4.getId(), exhibition4);
     }
 
