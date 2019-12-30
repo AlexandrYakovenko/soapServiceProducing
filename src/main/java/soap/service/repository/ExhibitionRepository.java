@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Component
 public class ExhibitionRepository {
-    private static  final Map<Long, Exhibition> mapEntities = new HashMap<>();
+    private static final Map<Long, Exhibition> mapEntities = new HashMap<>();
 
     @PostConstruct
     public void initData() {
@@ -19,18 +19,18 @@ public class ExhibitionRepository {
         mapEntities.put(exhibition1.getId(), exhibition1);
 
         Exhibition exhibition2 = new Exhibition();
-        exhibition1.setId(2L);
-        exhibition1.setTitle("Furs");
+        exhibition2.setId(2L);
+        exhibition2.setTitle("Furs");
         mapEntities.put(exhibition2.getId(), exhibition2);
 
         Exhibition exhibition3 = new Exhibition();
-        exhibition1.setId(3L);
-        exhibition1.setTitle("Marvel");
+        exhibition3.setId(3L);
+        exhibition3.setTitle("Marvel");
         mapEntities.put(exhibition3.getId(), exhibition3);
 
         Exhibition exhibition4 = new Exhibition();
-        exhibition1.setId(4L);
-        exhibition1.setTitle("Channel");
+        exhibition4.setId(4L);
+        exhibition4.setTitle("Channel");
         mapEntities.put(exhibition4.getId(), exhibition4);
     }
 
